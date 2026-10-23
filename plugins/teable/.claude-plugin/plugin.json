@@ -1,0 +1,21 @@
+{
+  "name": "teable",
+  "version": "1.0.0",
+  "description": "Work with your Teable projects from Claude: browse tables and fields, query, create, update and delete records, run read-only SQL, and reach the rest of the Teable API.",
+  "author": {
+    "name": "Teable",
+    "email": "support@teable.ai",
+    "url": "https://teable.ai"
+  },
+  "homepage": "https://github.com/teableio/teable-plugin",
+  "repository": "https://github.com/teableio/teable-plugin",
+  "license": "MIT",
+  "keywords": [
+    "teable",
+    "database",
+    "spreadsheet",
+    "no-code",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://teable.ai/mcp-terms#privacy"
+}

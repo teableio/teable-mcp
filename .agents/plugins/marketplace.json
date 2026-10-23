@@ -1,0 +1,20 @@
+{
+  "name": "teable",
+  "interface": {
+    "displayName": "Teable"
+  },
+  "plugins": [
+    {
+      "name": "teable",
+      "source": {
+        "source": "local",
+        "path": "./plugins/teable"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

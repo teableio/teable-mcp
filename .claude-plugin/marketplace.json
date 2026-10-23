@@ -1,0 +1,16 @@
+{
+  "name": "teable",
+  "description": "Official Teable plugin: connect Claude to your Teable projects through the Teable MCP server.",
+  "owner": {
+    "name": "Teable",
+    "email": "support@teable.ai",
+    "url": "https://teable.ai"
+  },
+  "plugins": [
+    {
+      "name": "teable",
+      "source": "./plugins/teable",
+      "description": "Work with your Teable projects: tables, fields, records, read-only SQL and the Teable API."
+    }
+  ]
+}
