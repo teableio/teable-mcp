@@ -9,19 +9,19 @@ the browser on first use; no API key is needed.
 Install in Claude Code:
 
 ```bash
-claude plugin marketplace add teableio/teable-plugin
+claude plugin marketplace add teableio/teable-mcp
 claude plugin install teable@teable
 ```
 
 Install in Codex:
 
 ```bash
-codex plugin marketplace add teableio/teable-plugin
+codex plugin marketplace add teableio/teable-mcp
 codex plugin add teable@teable
 codex mcp login teable
 ```
 
 Privacy: <https://teable.ai/mcp-terms#privacy> · Terms: <https://teable.ai/mcp-terms#terms>
 
-See the [repository README](https://github.com/teableio/teable-plugin#readme) for every
+See the [repository README](https://github.com/teableio/teable-mcp#readme) for every
 client, the tool list and self-hosted setup.

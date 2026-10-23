@@ -1,4 +1,7 @@
-# Teable plugin
+# Teable MCP
+
+Claude Code, Codex and ChatGPT plugin for Teable's hosted MCP server. This repository
+holds the plugin manifests and setup docs; the server itself ships with Teable.
 
 Connect AI assistants to [Teable](https://teable.ai), the AI spreadsheet for business. Once
 installed, Claude, Codex and ChatGPT can find your projects and tables, read field
@@ -14,7 +17,7 @@ the first time a tool is used, your client opens Teable's sign-in and consent pa
 ### Claude Code
 
 ```bash
-claude plugin marketplace add teableio/teable-plugin
+claude plugin marketplace add teableio/teable-mcp
 claude plugin install teable@teable
 ```
 
@@ -24,7 +27,7 @@ Then run `/mcp` and choose **Authenticate**.
 ### Codex
 
 ```bash
-codex plugin marketplace add teableio/teable-plugin
+codex plugin marketplace add teableio/teable-mcp
 codex plugin add teable@teable
 codex mcp login teable
 ```
@@ -88,7 +91,7 @@ any client above at that URL instead of `mcp.teable.ai`.
 
 - Privacy: <https://teable.ai/mcp-terms#privacy>
 - Terms: <https://teable.ai/mcp-terms#terms>
-- Support: [open an issue](https://github.com/teableio/teable-plugin/issues) or email
+- Support: [open an issue](https://github.com/teableio/teable-mcp/issues) or email
   [support@teable.ai](mailto:support@teable.ai)
 
 ## Repository layout

@@ -7,8 +7,8 @@
     "email": "support@teable.ai",
     "url": "https://teable.ai"
   },
-  "homepage": "https://github.com/teableio/teable-plugin",
-  "repository": "https://github.com/teableio/teable-plugin",
+  "homepage": "https://github.com/teableio/teable-mcp",
+  "repository": "https://github.com/teableio/teable-mcp",
   "license": "MIT",
   "keywords": [
     "teable",
