@@ -7,8 +7,10 @@
     "email": "support@teable.ai",
     "url": "https://teable.ai"
   },
-  "homepage": "https://github.com/teableio/teable-mcp",
+  "homepage": "https://teable.ai",
   "repository": "https://github.com/teableio/teable-mcp",
+  "documentationUrl": "https://github.com/teableio/teable-mcp#readme",
+  "supportUrl": "https://github.com/teableio/teable-mcp/issues",
   "license": "MIT",
   "keywords": [
     "teable",
@@ -17,5 +19,6 @@
     "no-code",
     "mcp"
   ],
-  "privacyPolicyUrl": "https://teable.ai/mcp-terms#privacy"
+  "privacyPolicyUrl": "https://teable.ai/mcp-terms#privacy",
+  "termsOfServiceUrl": "https://teable.ai/mcp-terms#terms"
 }
