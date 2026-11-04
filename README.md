@@ -109,11 +109,9 @@ any client above at that URL instead of `mcp.teable.ai`.
 ```
 .claude-plugin/marketplace.json     Claude Code marketplace
 .agents/plugins/marketplace.json    Codex marketplace
-.codebuddy-plugin/marketplace.json  CodeBuddy Code marketplace
 plugins/teable/
   .claude-plugin/plugin.json        Claude plugin manifest
   .codex-plugin/plugin.json         Codex / OpenAI manifest, with listing and review metadata
-  .codebuddy-plugin/plugin.json     CodeBuddy Code / WorkBuddy manifest
   .mcp.json                         The server, shared by all clients
   skills/                           Agent skills (teable-app-builder), shared by all clients
   assets/                           Logo and composer icon

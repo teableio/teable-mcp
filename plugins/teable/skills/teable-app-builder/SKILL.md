@@ -11,6 +11,11 @@ sandbox. This skill does the same work on the user's machine: you are the agent,
 CLI materializes everything the sandbox would have provided, and `teable app push` saves
 versions back to Teable.
 
+You run on the user's machine, not in that sandbox. There is no in-app chat around you: no
+credential cards, no sandbox paths, no Teable-side preview you control. Where the sandbox would
+show a card, ask the user in your own conversation; the `AGENTS.md` a checkout gets is already
+the local variant.
+
 Data questions (query records, change rows) go through the Teable MCP tools when they are
 available; everything that produces files, touches git or needs the app checkout goes through
 the CLI. Do not mix the two for the same job.
@@ -64,6 +69,10 @@ Tables need no choosing: the checkout receives `schema/*.json` for every table o
 teable app init --name "<App name>" --dir ./<dir>        # new app, scaffold as version 1
 teable app clone --app-id app… --dir ./<dir>             # existing app (ids from `teable app list`)
 ```
+
+Which app: the one the user named or linked. Otherwise run `teable app list` first. Several
+apps and no name → ask which one. A request for a new app when a similar one already exists →
+ask once whether to change that one or start a new one; do not pick silently.
 
 Both leave a git checkout whose remote `teable` is the app repository, plus:
 
