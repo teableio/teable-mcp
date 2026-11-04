@@ -55,6 +55,16 @@ create one in Teable under **Settings → Personal access tokens** and pass it a
 
 Teable also lists every option, with copyable snippets, under **Settings → MCP**.
 
+## Skills
+
+Besides the MCP server, the plugin ships agent skills for work the server does not cover:
+
+| Skill | What it teaches the agent |
+| --- | --- |
+| `teable-app-builder` | Build, change and publish Teable apps from your machine with the `teable` CLI: `teable app init\|clone` for a local checkout, the dev loop, `teable app push` to record versions, `publish`, versions and rollback, table-schema refresh and named-query repairs. |
+
+Skills call the [`@teable/cli`](https://www.npmjs.com/package/@teable/cli) (`npx -y @teable/cli@latest …`), which signs in with the same account through the browser.
+
 ## Tools
 
 | Tool | What it does | Changes data |
@@ -102,7 +112,8 @@ any client above at that URL instead of `mcp.teable.ai`.
 plugins/teable/
   .claude-plugin/plugin.json        Claude plugin manifest
   .codex-plugin/plugin.json         Codex / OpenAI manifest, with listing and review metadata
-  .mcp.json                         The server, shared by both clients
+  .mcp.json                         The server, shared by all clients
+  skills/                           Agent skills (teable-app-builder), shared by all clients
   assets/                           Logo and composer icon
 scripts/package-openai.sh           Builds the ZIP uploaded to the OpenAI plugin portal
 ```

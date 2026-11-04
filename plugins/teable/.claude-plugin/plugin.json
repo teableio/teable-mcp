@@ -1,7 +1,7 @@
 {
   "name": "teable",
-  "version": "1.0.0",
-  "description": "Work with your Teable projects from Claude: browse tables and fields, query, create, update and delete records, run read-only SQL, and reach the rest of the Teable API.",
+  "version": "1.1.0",
+  "description": "Work with your Teable projects from Claude: browse tables and fields, query, create, update and delete records, run read-only SQL, reach the rest of the Teable API, and build Teable apps locally with the teable CLI.",
   "author": {
     "name": "Teable",
     "email": "support@teable.ai",
