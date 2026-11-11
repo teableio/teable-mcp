@@ -57,13 +57,22 @@ Teable also lists every option, with copyable snippets, under **Settings → MCP
 
 ## Skills
 
-Besides the MCP server, the plugin ships agent skills for work the server does not cover:
+Besides the MCP server, the plugin ships agent skills: they teach the agent how to work with Teable and cover what the server does not.
 
 | Skill | What it teaches the agent |
 | --- | --- |
+| `teable-assistant-ops` | Operate a Teable project with the `teable` CLI: tables, fields, views, records, SQL, imports, automations, routines, apps built by Teable's own builder, permissions and secrets, with a read-before-write process and reference docs for field, view and automation formats. |
 | `teable-app-builder` | Build, change and publish Teable apps from your machine with the `teable` CLI: `teable app init\|clone` for a local checkout, the dev loop, `teable app push` to record versions, `publish`, versions and rollback, table-schema refresh and named-query repairs. |
 
 Skills call the [`@teable/cli`](https://www.npmjs.com/package/@teable/cli) (`npx -y @teable/cli@latest …`), which signs in with the same account through the browser.
+
+The skills also install on their own, without the plugin, in any agent that reads
+[Agent Skills](https://agentskills.io):
+
+```bash
+npx skills add teableio/teable-mcp                                  # both skills
+npx skills add teableio/teable-mcp --skill teable-assistant-ops     # one of them
+```
 
 ## Tools
 
@@ -113,7 +122,7 @@ plugins/teable/
   .claude-plugin/plugin.json        Claude plugin manifest
   .codex-plugin/plugin.json         Codex / OpenAI manifest, with listing and review metadata
   .mcp.json                         The server, shared by all clients
-  skills/                           Agent skills (teable-app-builder), shared by all clients
+  skills/                           Agent skills (teable-assistant-ops, teable-app-builder), shared by all clients
   assets/                           Logo and composer icon
 scripts/package-openai.sh           Builds the ZIP uploaded to the OpenAI plugin portal
 ```

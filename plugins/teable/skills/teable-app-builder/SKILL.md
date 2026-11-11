@@ -20,6 +20,11 @@ Data questions (query records, change rows) go through the Teable MCP tools when
 available; everything that produces files, touches git or needs the app checkout goes through
 the CLI. Do not mix the two for the same job.
 
+This skill covers only the local checkout. Two neighbouring jobs belong to the
+`teable-assistant-ops` skill: having Teable's own builder write or change the app from a prompt
+(`teable app create|update --prompt`, no checkout involved), and work on the project itself
+(creating tables, fields and views, imports, automations). Use it for the tables a new app needs.
+
 ## Prerequisites
 
 - Node.js 22+, git and pnpm on PATH.
