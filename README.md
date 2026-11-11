@@ -74,6 +74,33 @@ npx skills add teableio/teable-mcp                                  # both skill
 npx skills add teableio/teable-mcp --skill teable-assistant-ops     # one of them
 ```
 
+### Setting up the skills from an agent
+
+> These steps are for an AI agent asked to install the Teable skill. Some of them need the
+> user to act in a browser.
+
+1. Install the skills:
+
+   ```bash
+   npx skills add https://github.com/teableio/teable-mcp
+   ```
+
+2. Install the Teable CLI and sign in. Run this from the installed `teable-assistant-ops`
+   skill directory. The script installs or upgrades `@teable/cli` and starts the browser
+   sign-in when there is no valid login; if it prints an authorization URL, pass it to the user.
+   For a self-hosted Teable, set `TEABLE_ENDPOINT` to its URL first.
+
+   ```bash
+   bash scripts/install.sh
+   ```
+
+3. Verify:
+
+   ```bash
+   teable --version
+   teable auth status
+   ```
+
 ## Tools
 
 | Tool | What it does | Changes data |
@@ -125,6 +152,8 @@ plugins/teable/
   skills/                           Agent skills (teable-assistant-ops, teable-app-builder), shared by all clients
   assets/                           Logo and composer icon
 scripts/package-openai.sh           Builds the ZIP uploaded to the OpenAI plugin portal
+scripts/*.mjs                       CLI doc sync and validation for teable-assistant-ops
+.github/                            CLI manifest snapshot and the sync workflows (see AGENTS.md)
 ```
 
 The MCP server itself lives in the Teable codebase; this repository only describes how
