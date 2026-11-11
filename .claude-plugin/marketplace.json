@@ -9,7 +9,10 @@
   "plugins": [
     {
       "name": "teable",
-      "source": "./plugins/teable",
+      "source": {
+        "source": "github",
+        "repo": "teableio/agent-skills"
+      },
       "description": "Work with your Teable projects: tables, fields, records, read-only SQL and the Teable API."
     }
   ]
